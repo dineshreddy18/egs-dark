@@ -1,0 +1,412 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #232323;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  font-weight: 500;
+  color: white;
+  font-size: 45px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 28px;
+}
+
+header {
+  background-image: url("../images/Desktop/Header.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+header .content {
+  min-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header p {
+  width: 50%;
+  color: white;
+  text-align: center;
+}
+
+header .btn {
+  width: 250px;
+}
+
+.whyus__team {
+  background: url("../images/Desktop/Team_Decorated.svg") no-repeat center;
+  background-size: contain;
+}
+
+.whyus__rightSection__content {
+  width: 250px;
+  height: 250px;
+  background: #0176ff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.ourModelContent p:first-child {
+  font-size: 18px;
+}
+
+.ourModelContent p:nth-child(3),
+.ourModelContent p:nth-child(4),
+.ourModelContent p:nth-child(5) {
+  background: linear-gradient(to bottom, transparent 50%, #0176ff 50%);
+}
+
+.steps_cards {
+  background: #0176ff;
+  position: relative;
+}
+
+.steps_cards svg {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 100px;
+  height: 100px;
+  fill: white;
+}
+
+.steps_cards h1 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.steps_card {
+  padding-left: 20%;
+}
+
+.steps_card p {
+  color: #fff;
+}
+
+.cta {
+  min-height: 50vh;
+}
+
+footer {
+  min-height: 15vh;
+  color: white;
+  background: #0176ff;
+  padding: 20px;
+}
+
+/* Solutions */
+
+.challenges__content--text ul,
+.solutions__content--text ul {
+  height: 100%;
+  list-style: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 18px;
+}
+
+.challenges__content--text ul li::before,
+.solutions__content--text ul li::before {
+  content: "\2713";
+  margin-right: 1rem;
+  color: greenyellow;
+}
+.recruiters__content button::after,
+.candidates__content button::after {
+  /* arrow up */
+  content: "\2191";
+  margin-left: 0.5rem;
+}
+
+.recruiters__step1,
+.recruiters__step2,
+.recruiters__step3,
+.candidates__step1,
+.candidates__step2,
+.candidates__step3 {
+  background: #0176ff;
+  border-radius: 10px;
+  padding: 35px;
+  margin-right: 1.5rem;
+  height: 200px;
+  width: 250px;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+}
+
+.recruiters__step1::before,
+.recruiters__step2::before,
+.recruiters__step3::before,
+.candidates__step1::before,
+.candidates__step2::before,
+.candidates__step3::before {
+  content: "";
+  width: 60px;
+  height: 30px;
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.recruiters__step1::before {
+  content: "01";
+}
+.recruiters__step2::before {
+  content: "02";
+}
+.recruiters__step3::before {
+  content: "03";
+}
+
+.candidates__step1::before {
+  content: "01";
+}
+.candidates__step2::before {
+  content: "02";
+}
+.candidates__step3::before {
+  content: "03";
+}
+
+/* End of Solutions */
+
+/* Expertise */
+.expertise {
+  background: none;
+}
+
+.services_card,
+.history_card {
+  background: #0176ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 10px;
+  gap: 1rem;
+}
+.services_card h2,
+.history_card h2 {
+  font-size: 20px;
+}
+
+.services_card .fa,
+.history_card .fa {
+  color: #fff;
+  font-size: 40px;
+}
+
+/* End of Expertise */
+
+/* Contact */
+
+.contact {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.contact h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.contact_us h2 {
+  font-size: 30px;
+}
+
+.contact_us__sidebar .fa {
+  font-size: 30px;
+}
+
+/* End of Contact */
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .whyus__rightSection__content {
+    width: 100%;
+  }
+
+  .navbar-brand img {
+    width: 50px;
+  }
+
+  header {
+    background: black;
+  }
+  header .content {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  header img {
+    align-self: center;
+  }
+
+  header p {
+    width: 310px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header .btn {
+    width: 150px;
+  }
+
+  .ourModel {
+    position: relative;
+  }
+
+  .ourModel svg:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    fill: #0176ff;
+    z-index: -1;
+  }
+
+  .ourModel svg:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    fill: #0176ff;
+    z-index: -1;
+  }
+
+  .steps_card h2 {
+    font-size: 24px;
+  }
+  .steps_card p {
+    font-size: 14px;
+  }
+
+  .steps_cards h1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    opacity: 50%;
+  }
+
+  .steps_cards {
+    position: relative;
+  }
+
+  .steps_cards svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cta {
+    position: relative;
+  }
+
+  .cta h2 {
+    font-size: 18px;
+    width: 230px;
+    line-height: 1.5;
+  }
+
+  .cta img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  /* Solutions */
+
+  .recruiters__step1,
+  .recruiters__step2,
+  .recruiters__step3,
+  .candidates__step1,
+  .candidates__step2,
+  .candidates__step3 {
+    background: #0176ff;
+    border-radius: 10px;
+    padding: 35px;
+    margin-right: 1.5rem;
+    height: 250px;
+    width: 80%;
+    color: white;
+    margin: 1rem 0;
+  }
+
+  /* Solutions */
+
+  /* Contact */
+
+  .contact {
+    padding: 50px;
+  }
+
+  .contact h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .contact_us__form {
+    width: 100%;
+  }
+  /* End of Contact */
+}

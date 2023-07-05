@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import josefin sans -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- import worksans  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- import bootstrap 5 -->
+    <link rel="stylesheet" href="css/vendor_css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor_css/hamburgers.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/Desktop/EGS-LOGO.svg" alt="" />
+        </a>
+        <button
+          id="menu_button"
+          class="hamburger hamburger--spin navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="solutions.html">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="expertise.html" aria-current="page"
+                >Our expertise</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="contact min-vh-100">
+      <div class="contact__title">
+        <h1>Zone - Recruiters and Candidates</h1>
+      </div>
+      <div class="contact__image">
+        <img
+          src="images/Desktop/contact_header.png"
+          loading="lazy"
+          class="img-fluid"
+        />
+      </div>
+    </header>
+    <section class="contact_us min-vh-100 mx-auto row container-fluid my-4">
+      <div
+        class="contact_us__sidebar col-md-4 d-flex flex-column justify-content-center align-items-center text-white p-3"
+      >
+        <h2>Get in Touch</h2>
+        <p>We'love to hear from you, our friendly team always here to chat.</p>
+        <div class="row justify-content-between align-items-center w-100">
+          <div class="col-2 col-md-4">
+            <!-- email -->
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+          <div class="content col-10 col-md-8">
+            <p class="fw-bold">Chat with Us</p>
+            <p>Our Friendly team here to help</p>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center w-100">
+          <div class="col-md-4 col-2">
+            <!-- marker -->
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </div>
+          <div class="content col-10 col-md-8">
+            <p class="fw-bold">Office</p>
+            <address>Some Address</address>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center w-100">
+          <div class="col-md-4 col-2">
+            <!-- phone -->
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+          <div class="content col-10 col-md-8">
+            <p class="fw-bold">Phone</p>
+            <p>Mon-Fri 10am to 5pm</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="contact_us__main col-md-8 d-flex flex-column justify-content-center"
+      >
+        <!-- <div class="contact_us__image">
+          <img src="images/Desktop/Contact_Form_image.svg" />
+        </div> -->
+        <div class="contact_us__form">
+          <h3 class="mb-3 text-white">Zone - Recruiters and Candidates</h3>
+          <!-- create success message -->
+          <div
+            class="alert alert-success"
+            id="success_message"
+            style="display: none"
+          >
+            <strong>Success!</strong> Your message has been sent, we will get
+            back to you soon.
+          </div>
+          <!-- create error message -->
+          <div
+            class="alert alert-danger"
+            id="error_message"
+            style="display: none"
+          >
+            <strong>Error!</strong> There was an error sending your message.
+            Please try again later.
+          </div>
+          <form action="" class="needs-validation" novalidate>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="fullname"
+                placeholder="Full Name"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please Enter Full Name</div>
+              <label for="fullname">Full Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please Enter Valid Email</div>
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                id="floatingInput"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                placeholder="Format: 1234567890"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">
+                Please Enter Valid Phone Number
+              </div>
+              <label for="floatingInput">Phone</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Ex:970003"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please Enter Valid Zip Code</div>
+              <label for="floatingInput">Zipcode</label>
+            </div>
+
+            <!-- choose category -->
+            <div class="form-floating mb-3">
+              <select
+                class="form-select"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+                required
+              >
+                <option selected disabled value="">Choose Category</option>
+                <option value="recruiter">Recruiter</option>
+                <option value="candidate">Candidate</option>
+              </select>
+              <div class="invalid-feedback">Please Enter Valid Category</div>
+              <label for="floatingSelect">Category</label>
+            </div>
+
+            <button type="submit" class="btn btn-lg btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="d-flex justify-content-center align-items-center">
+      <p>Copyright &copy; 2021, Elite Geek Solutions | All rights reserved.</p>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
